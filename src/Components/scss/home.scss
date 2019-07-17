@@ -1,0 +1,15 @@
+@import './global.scss';
+
+
+.loader-img{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+
+    & img{
+        width: 100%;
+    }
+}
+.loader-text{
+    text-align: center;
+}

@@ -1,0 +1,151 @@
+@mixin flex($direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+
+.rcaInput{
+    width: 100%;
+
+    & input,
+    & textarea{
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        color: #007bff;
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+
+        &:focus{
+            border-color: #007bff;
+        }
+    }
+    & textarea{
+        resize: none;
+    }
+}
+.btn-left{
+    @include flex(row, flex-start)
+}
+.btn-space{
+    @include flex(row, space-between)
+}
+.small-font{
+    font-size: 13px;
+}
+
+
+.error{
+    background: maroon;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    @include flex(column, center);
+    background: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+
+    & .auth-row{
+        background: #fff;
+        @include flex(row, center);
+
+        & .row{
+            width: 100%;
+        }
+    }
+
+    & .auth{
+        margin: auto;
+        padding: 10px;
+        height: 100%;
+        @include flex(column, center);
+
+        & .auth-head{
+            padding: 50px 0px;
+            color: #007bff;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        & .user-profile{
+            width: 100%;
+            @include flex(row, center);
+            padding-bottom: 20px;
+
+            & .up-img-sec{
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                overflow: hidden;
+                position: relative;
+                box-shadow: 0 0 30px rgba($color: (#000000), $alpha: 0.5);
+
+                & .rcaInput{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;
+                    display: block;
+                    & #profile-change{
+                        display: none;
+                    }
+                    & .profile-change{
+                        display: block;
+                        color: #fff;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(0, 0, 0, 0.5);
+                        font-size: 11px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        cursor: pointer;
+                        transition: .2s;
+                        transform: scale(0);
+                        border-radius: 50%;
+                        border: none;
+                        text-align: center;
+                    }
+                }
+                &:hover .profile-change{
+                    transform: scale(1);
+                }
+                & img{
+                    width: 100%;
+                }
+            }
+            
+        }
+    }
+}
+
+.modal-bg{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: #000000, $alpha: 0.5);
+    @include flex(column, center);
+    z-index: 999;
+
+    & .mbg-close{
+        color: #fff;
+        font-size: 30px;
+        font-weight: normal;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+}

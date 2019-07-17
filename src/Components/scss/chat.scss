@@ -1,0 +1,330 @@
+@import './global.scss';
+
+@mixin flex($d, $a) {
+    display: flex;
+    flex-direction: $d;
+    justify-content: $a;
+}
+
+.chat {
+	background: #fbfbfb;
+	.item {
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-align: center;
+		align-items: center;
+		>.content {
+			flex: 1;
+		}
+		.top {
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-align: center;
+			align-items: center;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			padding: 30px 0;
+			border-bottom: 2px solid #f9f9f9;
+			.headline {
+				display: -ms-flexbox;
+				display: flex;
+				-ms-flex-align: center;
+				align-items: center;
+			}
+			img {
+				width: 42px;
+				height: 42px;
+				border-radius: 100%;
+				margin-right: 15px;
+			}
+			h5 {
+				font-size: 16px;
+				font-weight: 600;
+				margin-bottom: 8px;
+			}
+			span {
+				display: block;
+				font-size: 15px;
+				font-weight: 500;
+				line-height: 1;
+				color: #bdbac2;
+			}
+			ul {
+				display: -ms-flexbox;
+				display: flex;
+				-ms-flex-wrap: nowrap;
+				flex-wrap: nowrap;
+				-ms-flex-direction: row;
+				flex-direction: row;
+				-ms-flex-align: center;
+				align-items: center;
+				padding-left: 0;
+				list-style: none;
+				margin-bottom: 0;
+				>li {
+					&:nth-child(7) {
+						display: none;
+					}
+					+ {
+						li {
+							margin-left: 25px;
+						}
+					}
+					.btn {
+						padding: 0;
+						&:hover {
+							.eva {
+								fill: #007bff;
+							}
+						}
+					}
+					.eva {
+						width: 28px;
+						height: 28px;
+						fill: #bdbac2;
+						-moz-transition: all 0.3s;
+						-webkit-transition: all 0.3s;
+						transition: all 0.3s;
+					}
+					.eva-arrow-ios-back {
+						width: 22px;
+						height: 22px;
+					}
+				}
+			}
+		}
+		.middle {
+			display: -ms-flexbox;
+			display: flex;
+			height: calc(100vh - 221px);
+			overflow-y: auto;
+			-ms-overflow-style: none;
+			overflow-x: hidden;
+			&::-webkit-scrollbar {
+				width: 5px;
+            }
+            &::-webkit-scrollbar-thumb {
+                width: 5px;
+                background: #333;
+			}
+			>div {
+				margin-top: auto;
+            }
+            // UL START
+			ul {
+				padding: 30px 0;
+				list-style: none;
+                margin-bottom: 0;
+                // LI START
+				>li {
+					display: -ms-flexbox;
+					display: flex;
+					-ms-flex-align: end;
+					align-items: flex-end;
+					-ms-flex-pack: justify;
+					justify-content: flex-end;
+					text-align: right;
+					+ {
+						li {
+							margin-top: 30px;
+						}
+					}
+					img {
+						width: 42px;
+						height: 42px;
+						border-radius: 100%;
+						margin-left: 15px;
+						-ms-flex-order: 2;
+						order: 2;
+					}
+					.content {
+						display: -ms-flexbox;
+						display: flex;
+						-ms-flex-direction: column;
+						flex-direction: column;
+						-ms-flex-order: 1;
+						order: 1;
+					}
+					.message {
+						+ {
+							.message {
+								margin-top: 15px;
+							}
+						}
+					}
+					.bubble {
+						display: inline-block;
+						max-width: 360px;
+						background: #007bff;
+						text-align: left;
+						border-radius: 6px;
+					}
+					p {
+						padding: 15px 20px;
+						color: #fff;
+					}
+					span {
+						display: block;
+						font-size: 15px;
+						font-weight: 500;
+						line-height: 1.2;
+						color: #bdbac2;
+						margin-top: 15px;
+						.eva {
+							width: 20px;
+							height: 20px;
+							fill: #bdbac2;
+						}
+                    }
+                    // ATTACHEMENT START
+					.attachment {
+						display: -ms-flexbox;
+						display: flex;
+						-ms-flex-align: center;
+						align-items: center;
+						padding: 20px;
+						.round {
+							display: -ms-flexbox;
+							display: flex;
+							-ms-flex-align: center;
+							align-items: center;
+							-ms-flex-pack: justify;
+							justify-content: center;
+							background: #fff;
+							margin-right: 15px;
+							.eva {
+								fill: #007bff;
+							}
+						}
+						h5 {
+							font-size: 16px;
+							font-weight: 600;
+							color: #fff;
+							margin-bottom: 8px;
+							&:hover {
+								text-decoration: underline;
+							}
+						}
+						span {
+							line-height: 1;
+							color: #fff;
+							margin-top: 0;
+						}
+                    }
+                    // ATTACHEMENT END
+					&.from-message {
+						-ms-flex-pack: justify;
+						justify-content: flex-start;
+						text-align: left;
+						img {
+							margin-right: 15px;
+							margin-left: 0;
+							-ms-flex-order: 1;
+							order: 1;
+						}
+						.content {
+							-ms-flex-order: 2;
+							order: 2;
+						}
+						.bubble {
+							background: #f5f5f5;
+						}
+						p {
+							color: #bdbac2;
+						}
+						.attachment {
+							.round {
+								background: #007bff;
+								.eva {
+									fill: #fff;
+								}
+							}
+							h5 {
+								color: #007bff;
+							}
+							span {
+								color: #bdbac2;
+							}
+						}
+					}
+                }
+                //LI END
+            }
+            //UL END
+		}
+		.bottom {
+			padding: 30px 0;
+			border-top: 2px solid #f9f9f9;
+			form {
+				position: relative;
+			}
+			.form-control {
+				padding: 15.5px 50px 15.5px 20px;
+				height: 55px;
+				resize: none;
+				&::-webkit-scrollbar {
+					display: none;
+				}
+			}
+			.prepend {
+				padding: 0 15px;
+				left: auto;
+				right: 0;
+				.eva {
+					fill: #bdbac2;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+.toast-center{
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: 20px;
+    @include flex(row, center);
+    animation: anim .5s;
+}
+.toaster{
+    padding: 10px;
+    background: #323232;
+    color: #fff;
+    font-weight: normal;
+    font-size: 13px;
+    border-radius: 3px;
+}
+@keyframes anim{
+    0%{
+        opacity: 0;
+        top: -100px;
+    }
+    50%{
+        opacity: 0.5;
+        top: 50px;
+    }
+    100%{
+        opacity: 1;
+        top: 20px;
+    }
+}
+
+.no-chats{
+    height: 100vh;
+    @include flex(column, center)
+
+    & .nc-img{
+        width: 200px;
+        margin: auto;
+
+        & img{
+            width: 100%;
+        }
+    }
+    & .nc-text{
+        text-align: center;
+    }
+}

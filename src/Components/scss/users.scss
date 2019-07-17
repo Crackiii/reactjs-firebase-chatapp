@@ -1,0 +1,76 @@
+@import './global.scss';
+.users {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0
+}
+
+.users>li {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%
+}
+
+.users>li>a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 2px solid #fbfbfb
+}
+
+.users>li>a:hover {
+    border-bottom: 2px solid #007bff
+}
+
+.users>li>a.active {
+    border-bottom: 2px solid #007bff
+}
+
+.users>li .content {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%
+}
+
+.users>li .round {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: center;
+    min-width: 42px;
+    margin-right: 15px
+}
+
+.users>li img {
+    width: 42px;
+    height: 42px;
+    border-radius: 100%
+}
+
+.users>li h5 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #212529;
+    margin-right: auto;
+    margin-bottom: 8px
+}
+
+.users>li span {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1;
+    white-space: nowrap;
+    color: #bdbac2
+}
+
+.users>li .eva-person {
+    width: 22px;
+    height: 22px;
+    fill: #bdbac2
+}

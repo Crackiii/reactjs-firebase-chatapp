@@ -1,0 +1,162 @@
+@import './global.scss';
+
+.modal-content {
+    border: none;
+    border-radius: 6px
+}
+
+.modal-header {
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 25px 30px;
+    background: #007bff;
+    border-bottom: none
+}
+
+.modal-header h5 {
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0
+}
+
+.modal-header .round {
+    padding: 0;
+    background: rgba(255, 255, 255, .25)
+}
+
+.modal-header .round:hover {
+    color: #007bff
+}
+
+.modal-header .round .eva {
+    fill: #fff
+}
+
+.modal-body {
+    padding: 0;
+    background: #fbfbfb;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px
+}
+
+.modal-body .nav {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding: 15px 30px;
+    width: 100%;
+    background: #f5f5f5
+}
+
+.modal-body .nav li {
+    width: 100%;
+    text-align: center
+}
+
+.modal-body .nav li + li {
+    margin-left: 6px
+}
+
+.modal-body .nav li .active {
+    background: #fff;
+    color: #007bff
+}
+
+.modal-body .nav li a {
+    display: block;
+    padding: 10px 0;
+    color: #bdbac2;
+    border-radius: 6px
+}
+
+.modal-body h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px
+}
+
+.modal-body h4 {
+    font-weight: 600;
+    margin-bottom: 0
+}
+
+.modal-body hr {
+    border-top: 2px solid #f9f9f9;
+    margin: 30px 0 0
+}
+
+.modal-body .details {
+    padding: 30px 30px 0
+}
+
+.modal-body .form-group:last-of-type {
+    margin-bottom: 0
+}
+
+.modal-body input.form-control {
+    padding: 0 20px;
+    height: 55px
+}
+
+.modal-body textarea.form-control {
+    padding: 20px;
+    min-height: 100px;
+    max-height: 100px
+}
+
+.modal-body .participants {
+    padding: 30px 30px 0
+}
+
+.modal-body .search {
+    margin-bottom: 30px
+}
+
+.modal-body .search form {
+    padding: 0;
+    position: relative
+}
+
+.modal-body .search .form-control {
+    padding: 0 10px 0 50px;
+    height: 55px
+}
+
+.modal-body .search .eva {
+    fill: #bdbac2
+}
+
+.modal-body .users>li {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 2px solid #f9f9f9
+}
+
+.modal-body .custom-control-label {
+    top: 1px;
+    cursor: pointer;
+}
+
+.modal-body .custom-control-label::before {
+    background: #f5f5f5;
+    box-shadow: none!important;
+    border: none;
+    outline: none
+}
+
+.modal-body .custom-control-input:checked~.custom-control-label::before {
+    background: #007bff
+}
+
+.modal-footer {
+    padding: 30px;
+    background: #fbfbfb;
+    border: none
+}
+
+.modal-footer .rcaBtn{
+    padding: 14px 0;
+    width: 100%;
+}

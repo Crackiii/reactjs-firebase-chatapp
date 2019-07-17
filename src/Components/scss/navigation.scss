@@ -1,0 +1,72 @@
+@import '../scss/global.scss';
+
+.navigation {
+    background: #fff
+}
+
+.navigation .container::-webkit-scrollbar {
+    display: none
+}
+
+.navigation .logo img {
+    width: 50px;
+    height: 50px
+}
+
+.navigation ul {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0
+}
+
+.navigation ul>li>a .eva {
+    width: 36px;
+    height: 36px;
+    fill: #bdbac2;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s
+}
+
+.navigation ul>li>a.active .eva {
+    fill: #007bff
+}
+
+.navigation ul>li>a:hover .eva {
+    fill: #007bff
+}
+
+.navigation .btn {
+    padding: 0;
+    position: relative
+}
+
+.navigation .btn img {
+    width: 42px;
+    height: 42px;
+    border-radius: 100%
+}
+
+.navigation .btn .eva-bulb {
+    width: 36px;
+    height: 36px;
+    fill: #bdbac2;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s
+}
+
+.navigation .btn .eva-bulb:hover {
+    fill: #007bff
+}
+
+.navigation .btn .eva-radio-button-on {
+    position: absolute;
+    bottom: 0;
+    margin-left: -11px;
+    width: 11px;
+    height: 11px;
+    fill: #43b581;
+    stroke: #43b581;
+    stroke-width: 4
+}

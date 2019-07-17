@@ -1,0 +1,93 @@
+@import './global.scss';
+.utility {
+    width: 336px;
+    height: 100vh;
+    background: #fdfdfd;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    overflow-x: hidden
+}
+
+.utility::-webkit-scrollbar {
+    display: none
+}
+
+.utility .container {
+    padding-top: 30px;
+    padding-bottom: 30px
+}
+
+.utility .close {
+    margin-bottom: 30px
+}
+
+.utility .close .eva {
+    fill: #bdbac2
+}
+
+.utility .nav {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding: 6px;
+    width: 100%;
+    background: #f5f5f5;
+    border-radius: 6px;
+    margin: 15px 0 30px
+}
+
+.utility .nav li {
+    width: 100%;
+    text-align: center
+}
+
+.utility .nav li + li {
+    margin-left: 6px
+}
+
+.utility .nav li .active {
+    background: #fff;
+    color: #007bff
+}
+
+.utility .nav li a {
+    display: block;
+    padding: 8px 0;
+    color: #bdbac2;
+    border-radius: 6px
+}
+
+.utility .primary {
+    padding: 14px 0;
+    background: #f5f5f5;
+    color: #bdbac2
+}
+
+.utility .upload {
+    margin-top: 30px
+}
+
+.utility h4 {
+    font-weight: 600;
+    margin-bottom: 0
+}
+
+.utility hr {
+    margin-bottom: 0
+}
+
+.utility .users>li {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 2px solid #f9f9f9
+}
+
+.utility .users>li .btn {
+    padding: 0
+}
+
+.utility .users>li .eva-more-vertical {
+    fill: #bdbac2
+}

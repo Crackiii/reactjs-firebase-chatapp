@@ -1,0 +1,251 @@
+@import './global.scss';
+
+.settings .user {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.settings .user label {
+    margin-bottom: 0
+}
+
+.settings .user input[type="file"] {
+    display: none
+}
+
+.settings .user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 15px;
+    cursor: pointer
+}
+
+.settings .user h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px
+}
+
+.settings .user span {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1;
+    color: #bdbac2
+}
+
+.settings h4 {
+    padding: 30px 0;
+    font-weight: 600;
+    border-bottom: 2px solid #fbfbfb;
+    margin-bottom: 0
+}
+
+.settings hr {
+    margin-bottom: 0
+}
+
+.settings ul {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0
+}
+
+.settings>ul>li {
+    border-bottom: 2px solid #fbfbfb
+}
+
+.settings>ul>li>.headline {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 25px 0
+}
+
+.settings>ul>li>.headline[data-toggle="collapse"][aria-expanded="true"] h5 {
+    color: #007bff
+}
+
+.settings>ul>li>.headline[data-toggle="collapse"][aria-expanded="true"] .eva-arrow-ios-forward {
+    display: none
+}
+
+.settings>ul>li>.headline[data-toggle="collapse"][aria-expanded="true"] .eva-arrow-ios-downward {
+    display: inline-block;
+    fill: #007bff
+}
+
+.settings>ul>li>.headline h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 7px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s
+}
+
+.settings>ul>li>.headline .eva {
+    fill: #bdbac2;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s
+}
+
+.settings>ul>li>.headline:hover h5 {
+    color: #007bff
+}
+
+.settings>ul>li>.headline:hover .eva {
+    fill: #007bff
+}
+
+.settings>ul>li>.headline .eva-arrow-ios-downward {
+    display: none
+}
+
+.settings .content .inside {
+    padding: 25px 0;
+    border-top: 2px solid #fbfbfb
+}
+
+.settings .account .form-row {
+    margin-right: -7.5px;
+    margin-left: -7.5px
+}
+
+.settings .account .form-row>[class*="col-"] {
+    padding-right: 7.5px;
+    padding-left: 7.5px
+}
+
+.settings .account .form-group {
+    margin-bottom: 25px
+}
+
+.settings .account input.form-control {
+    padding: 0 20px;
+    height: 55px
+}
+
+.settings .account textarea.form-control {
+    padding: 20px;
+    min-height: 100px;
+    max-height: 100px
+}
+
+.settings .account .primary {
+    padding: 14px 0
+}
+
+.settings .options>li {
+    padding: 25px 0
+}
+
+.settings .options>li:first-of-type {
+    padding-top: 0
+}
+
+.settings .options>li:last-of-type {
+    padding-bottom: 0
+}
+
+.settings .options>li + li {
+    border-top: 2px solid #fbfbfb
+}
+
+.settings .options>li .headline {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 10px
+}
+
+.settings .options>li .headline h5 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.7;
+    margin-bottom: 0
+}
+
+.settings .options>li .switch {
+    margin-left: 30px
+}
+
+.settings .integrations>li {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 25px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .03)
+}
+
+.settings .integrations>li + li {
+    margin-top: 15px
+}
+
+.settings .integrations>li .btn {
+    min-width: 42px;
+    margin-right: 15px
+}
+
+.settings .integrations>li:nth-child(1) .btn {
+    background: #dc3545
+}
+
+.settings .integrations>li:nth-child(2) .btn {
+    background: #6610f2
+}
+
+.settings .integrations>li:nth-child(3) .btn {
+    background: #007bff
+}
+
+.settings .integrations>li:nth-child(4) .btn {
+    background: #6f42c1
+}
+
+.settings .integrations>li .eva {
+    fill: #fff
+}
+
+.settings .integrations>li .content {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%
+}
+
+.settings .integrations>li .content>span {
+    font-weight: 500;
+    color: #bdbac2
+}
+
+.settings .integrations>li .headline {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.settings .integrations>li .headline h5 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.7;
+    margin-bottom: 0
+}
+
+.settings .integrations>li .switch {
+    margin-left: 30px
+}

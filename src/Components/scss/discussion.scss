@@ -1,0 +1,102 @@
+@import './global.scss';
+
+.discussions {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0
+}
+
+.discussions>li {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%
+}
+
+.discussions>li .direct {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.discussions>li>a {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #fbfbfb
+}
+
+
+.discussions>li>a:hover {
+    border-bottom: 1px solid #007bff;
+}
+
+.discussions>li>a.active {
+    border-bottom: 1px solid #007bff
+}
+
+.discussions>li>a.active p {
+    color: #212529;
+}
+
+.discussions>li>a .content {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    position: relative;
+}
+.discussions li a .content p{
+    font-size: 14px;
+}
+
+.discussions>li>a .headline {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-bottom: 10px
+}
+
+.discussions>li .groups .headline {
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.discussions>li>a img {
+    width: 42px;
+    height: 42px;
+    border-radius: 100%
+}
+
+.discussions>li .groups img {
+    width: 32px;
+    height: 32px;
+    margin-right: 15px
+}
+
+.discussions>li>a h5 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.7;
+    color: #212529;
+    margin-right: auto;
+    margin-bottom: 0
+}
+
+.discussions>li>a span {
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+    color: #bdbac2;
+    margin-left: 30px
+}
+
+.chatList-loader{
+    width: 100%;
+    height: 50vh;
+    @include flex(column, center);
+    text-align: center;
+    & img{
+        width: 80px;
+        margin: auto;
+    }
+}
